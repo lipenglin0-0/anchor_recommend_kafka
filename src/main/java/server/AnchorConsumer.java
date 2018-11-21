@@ -43,7 +43,9 @@ public class AnchorConsumer {
     新消费者第一次调用poll 时，会找GroupCoordinator，加入到消费组，与分配的 partition连接
   */
   /*
-    ExecutorService
+    ExecutorService:
+      1. execute -> runnable or callable
+      2. shutdown -> no new task will be accepted
    */
   /*
     1. 提交的offset 小于最后提交的offset，区间的消息会被重复消费
